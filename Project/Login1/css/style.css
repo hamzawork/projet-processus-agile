@@ -1,0 +1,156 @@
+*{
+	margin : 5;
+	padding : 0;
+	font-family: Century Gothic;
+}
+
+header{
+	
+	
+
+}
+.background{
+	background-image :url("../image/a.gif");
+	height:100vh;
+	filter : blur(5px);
+	background-repeat: repeat;
+	background-position: center;
+	opacity: 0.4;
+	background-position: center;
+}
+
+
+.tache .um5 img{
+	float : left;
+	width : 15%;
+	height: auto;
+}
+.tache .ensias img{
+	float : right;
+	width : 8%;
+	height: auto;
+}
+
+.logo .EN img{
+	width : 30%;
+	height: auto;
+	position : fixed;
+	top : 60%;
+	left : 50%;
+	transform : translate(-50%,-50%);
+}
+.logo .menu2, .logo .menu3 , .logo .menu4{
+	list-style: none;
+	padding: 0;
+	margin:0;
+	position: fixed;
+	top: -100px
+	left: -100px;
+	cursor:default;
+	border-radius: 50%;
+	transform:scale(0);
+	transition: transform 1.4s 0.07s;
+	z-index: -1;
+}
+
+.logo:hover .menu2,.logo:hover .menu3,.logo:hover .menu4{
+	transition: transform 0.4s 0.08s, z-index 0s 0.05s;
+	transform: scale(1);
+	z-index: 1;
+	cursor: pointer;
+}
+
+.logo .menu2 {
+	position: fixed;
+	top: 68%;
+	left:26%;
+
+	transform-origin: 100px 100px;
+	transition : all 0.5s 0.1s;
+}
+
+.logo:hover .menu2 img,.logo:hover .menu3 img,.logo:hover .menu4 img{
+	transition : all 0.7s;
+}
+
+.logo .menu2 img,.logo .menu3 img,.logo .menu4 img{
+	width: 120px;
+	height : auto;
+	transition :0.7s;
+}
+
+
+.logo .menu3 {
+	position: fixed;
+	top: 68%;
+	right: 27%;
+	transform-origin: 100px 100px;
+	transition : all 0.5s 0.1s;
+}
+
+.logo .menu4 {
+	position:fixed;
+	top: 6%;
+	left:45.5%;
+	transform-origin: 100px 100px;
+	transition : all 0.5s 0.1s;
+}
+
+.form_overlay, .site_overlay, .cours_overlay{
+	position: absolute;
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+	font-family: "quicksand" , sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transform:scale(0);
+	transition: transform 1.4s 0.07s;
+	z-index: -1;
+}
+.form_overlay {
+	top:28px;
+	left: -290px;
+	width: 240%;
+	height: 55%;
+}
+.cours_overlay{
+	top:28px;
+	left: -310px;
+	width:250%;
+	height: 55%;
+}
+.site_overlay{
+	top:28px;
+	left: 125px;
+	width:270%;
+	height: 55%;
+}
+.logo .menu2:hover .form_overlay, .logo .menu3:hover .site_overlay, .logo .menu4:hover .cours_overlay{
+	transition: transform 0.4s 0.08s, z-index 0s 0.05s;
+	transform: scale(1);
+	z-index: 1;
+}
+.logo .menu2:hover , .logo .menu3:hover ,.logo .menu4:hover {
+	transition: transform 0.4s 0.08s, z-index 0s 0.05s;
+	transform: scale(1.2);
+}
+
+.form_titre, .site_titre, .cours_titre{
+	font-size :1.5em;
+	font-weight: bold;
+
+}
+.form_description, .site_description, .cours_description{
+	font-size: 0.8em;
+	font-synthesis: 0.5cm;
+	margin-top: 0.2cm;
+}
+
+ 
+
+
+
+
+
